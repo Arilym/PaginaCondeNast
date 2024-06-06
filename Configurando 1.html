@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Información</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .red-carpet {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        background: url('https://i.pinimg.com/originals/99/4e/1a/994e1a834c323c635cec0346a32b3d12.gif') center/cover no-repeat;
+        transition: transform 1s ease-in-out;
+    }
+    .camera {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 900px;
+        height: 900px;
+        background: url('https://i.pinimg.com/originals/81/64/e2/8164e27bc1de52ad4de6056bec5d1c99.gif') center/cover no-repeat;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        background-color: #ffffff;
+    }
+    .information {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1440px;
+        height: 740px;
+        background-color: #fff;
+        border: 2px solid #000;
+        border-radius: 10px;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: justify;
+    }
+    .information h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .information img {
+        display: block;
+        margin: 0 auto 20px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .show-info {
+        opacity: 1;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="red-carpet"></div>
+    <div class="camera"></div>
+    <div class="information">
+        <h1>Bienvenidos al Evento VIP</h1>
+        <img src="https://strapi-bus-eng-prod.s3.amazonaws.com/about_f5a8665262.jpg" alt="Historia de Condé Nast" style="width: 300px; height: 160px;">
+        <p>Historia: Fundada en 1909 por el editor Condé Montrose Nast, tras la compra de una gaceta semanal de sociedad de Nueva York llamada Vogue. Desde entonces, Condé Nast ha crecido hasta convertirse en un referente de calidad editorial, mundialmente reconocido.</p>
+        <p>Con una presencia de más de un billón de consumidores en 32 mercados, a través de plataformas impresas, digitales, de video y sociales, Condé Nast es hogar de algunas de las marcas más emblemáticas del mundo, incluidas Vogue, The New Yorker, GQ, Vanity Fair, Wired, Architectural Digest (AD) y Condé Nast Traveler.</p>
+        <img src="https://strapi-bus-eng-prod.s3.amazonaws.com/Option_1_1053cdf558.png" alt="Tiendas Condé Nast" style="width: 300px; height: 160px;">
+        <p>Tiendas Condé Nast: Las tiendas Condé Nast ofrecen una combinación de productos de temporada y colecciones permanentes cuidadosamente seleccionadas, así como colaboraciones de marcas y ediciones limitadas que no se pueden encontrar en ningún otro lugar, reflejando a la perfección la esencia de nuestras icónicas marcas.</p>
+    </div>
+</div>
+<h1>Bienvenidos al Evento VIP</h1>
+        <img src="https://strapi-bus-eng-prod.s3.amazonaws.com/about_f5a8665262.jpg" alt="Historia de Condé Nast">
+        <p>Historia: Fundada en 1909 por el editor Condé Montrose Nast, tras la compra de una gaceta semanal de sociedad de Nueva York llamada Vogue. Desde entonces, Condé Nast ha crecido hasta convertirse en un referente de calidad editorial, mundialmente reconocido.</p>
+        <p>Con una presencia de más de un billón de consumidores en 32 mercados, a través de plataformas impresas, digitales, de video y sociales, Condé Nast es hogar de algunas de las marcas más emblemáticas del mundo, incluidas Vogue, The New Yorker, GQ, Vanity Fair, Wired, Architectural Digest (AD) y Condé Nast Traveler.</p>
+        <img src="https://strapi-bus-eng-prod.s3.amazonaws.com/Option_1_1053cdf558.png" alt="Tiendas Condé Nast">
+        <p>Tiendas Condé Nast: Las tiendas Condé Nast ofrecen una combinación de productos de temporada y colecciones permanentes cuidadosamente seleccionadas, así como colaboraciones de marcas y ediciones limitadas que no se pueden encontrar en ningún otro lugar, reflejando a la perfección la esencia de nuestras icónicas marcas.</p>
+<script>
+    setTimeout(() => {
+        document.querySelector('.red-carpet').style.transform = 'translate(-50%, -150%)';
+        document.querySelector('.camera').style.opacity = '1';
+        setTimeout(() => {
+            document.querySelector('.information').classList.add('show-info');
+        }, 6000); // Extendido el tiempo para mostrar la información
+    }, 6000); // Extendido el tiempo para mostrar la cámara
+</script>
+</body>
+</html>

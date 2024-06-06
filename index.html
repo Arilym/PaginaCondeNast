@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condé Nast</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+        }
+
+        .header-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            position: relative;
+        }
+
+        .header-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 36px;
+            font-family: cursive;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-family: cursive;
+        }
+
+        .main-section {
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            padding-bottom: 100px; /* Ajuste para compensar la altura de la barra institucional */
+        }
+
+        .more-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .more-button:hover {
+            background-color: #555;
+        }
+
+        .large-image {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 300px; /* aumenta el tamaño según sea necesario */
+            height: 300px;
+        }
+
+        .sidebar {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0; /* Cambiado de 'left' a 'right' */
+            width: 200px;
+            overflow-y: auto; /* Hacer scroll cuando el contenido es más largo que la barra lateral */
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilos para dispositivos móviles */
+        @media only screen and (max-width: 600px) {
+            .sidebar {
+                position: relative;
+                width: 100%;
+                background-color: #333;
+                color: white;
+                padding: 10px;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="header-img" src="https://files.merca20.com/uploads/2022/03/Conde-Nast-Rusia-Vogue-GQ-Glamour.jpg" alt="Imagen de cabecera">
+        <h1 class="header-title"></h1>
+        <nav>
+            <ul>
+                <li><a href="Marcas.html">Marcas</a></li>
+                <li><a href="Publicidad.html">Publicidad</a></li>
+                <li><a href="Entretenimiento.html">Entretenimiento</a></li>
+                <li><a href="Noticias.html">Noticias</a></li>
+                <li><a href="DiversidadInclusion.html">Diversidad e inclusión</a></li>
+                <li><a href="FormularioGustos.html">Tus gustos</a></li>
+                <li> <a href="http://localhost/Pagina%20Empresa%20Conde%20Nast/login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main-section">
+        <h1> LAS MARCAS MÁS EMPLEMÁTICAS DEL MUNDO</h1>
+    <h5>Av. Paseo de las Palmas 781 Piso 8, Colonia Lomas de <br>
+        Chapultepec III Sección, Alcaldía Miguel Hidalgo, CP.<h5>
+       <h3>Estamos aquí para entretener, sorprender y empoderar. <br> 
+    Desde las marcas más icónicas hasta talentos líderes a <br>
+    nivel mundial, estamos comprometidos con lo mejor de lo mejor.<br><br>
+
+    Ofertas de servicio:<br><br>
+
+    Publicidad Impresa: Llega a tu audiencia objetivo a través <br>
+    de nuestras prestigiosas revistas impresas como Vogue, Vanity<br>
+     Fair, y Wired.<br>
+    Plataformas Digitales: Aprovecha nuestro alcance global a <br>
+    través de nuestras plataformas digitales líderes en el <br>
+    mercado para promocionar tu marca y alcanzar a una audiencia <br>
+    diversa y comprometida.<br>
+    Producción de Contenido: Contamos con un equipo de expertos <br>
+    creativos que pueden ayudarte a crear contenido atractivo y <br>
+    relevante que resuene con tu audiencia.<br>
+    Eventos Exclusivos: Organiza eventos exclusivos en colaboración <br>
+    con nuestras marcas líderes para conectarte con influencers,<br>
+     celebridades y líderes de la industria.</h3>
+    <br><br>
+        <a href="pagina MAS.html" class="more-button">Más</a>
+        <br><br>
+        <img class="large-image" src="https://i.dailymail.co.uk/1s/2020/03/19/14/26163968-8130137-image-a-26_1584628558257.jpg" alt="Imagen redonda grande">
+    </section>
+    <aside class="sidebar">
+        <h3> Operando en 32 mercados</h3>
+      <h6> Somos un conjunto de más de 6,000 personas que <br> 
+      prestan servicios a 37 marcas en 26 idiomas y abarcan <br>
+      32 mercados en todo el mundo, incluida China, Francia, <br>
+      Alemania, India, Italia, Japón, México y Latinoamérica, <br>
+      España, Taiwán, el Reino Unido y los Estados Unidos con <br>
+      socios de licencias adicionales en todo el mundo.</h6>
+      <img src="https://strapi-bus-eng-prod.s3.amazonaws.com/Screen_Shot_2022_08_31_at_2_13_48_PM_1_ccd2419661.png" alt="Imagen" style="width: 300px; height: 160px;"/>
+      <h3> El Código Condé</h3>
+      <h6> El Código Condé define nuestro propósito, nuestras <br>
+      creencias y el compromiso con nosotros mismos y con <br>
+      el mundo que nos rodea; sirve como una visión <br>
+      aspiracional de cómo evolucionaremos y creceremos <br>
+      juntos como empresa. </br></br>
+      Dirección de la sede:</br>
+       Conde Nast Headquarters</br>
+          1 World Trade Center</br>
+        New York, NY 10007</br>
+         Estados Unidos></h6>
+      <img src="https://strapi-bus-eng-prod.s3.amazonaws.com/GLAMOUR_REGINAKING_LOOK_02_0339_64452b525b.jpg" alt="Imagen" style="width: 300px; height: 160px;"/><br><br><br><br><br>
+    <h6> Correo electrónico de contacto: info@condenast.com</br></br>
+        Teléfono: +1 (212) 286-2860 </br></br></br></br></br></br></br></br>
+
+        </h6>
+    </aside>
+    <footer class="footer">
+        <p>
+            Correo electrónico de contacto: info@condenast.com      
+            Teléfono: +1 (212) 286-2860</br>
+            Facebook: <li> <a href="https://www.bing.com/ck/a?!&&p=4472e407c1ddd732JmltdHM9MTcxNzM3MjgwMCZpZ3VpZD0zMWU4OWM1Mi0xZDkwLTY5ODctMDIwMS04ZTZmMWNkMTY4ZDUmaW5zaWQ9NTIxOQ&ptn=3&ver=2&hsh=3&fclid=31e89c52-1d90-6987-0201-8e6f1cd168d5&psq=facebook+conde+nast&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2NvbmRlbmFzdC8&ntb=1">facebook</a></li>
+            Instagram:<li> <a href="https://www.bing.com/ck/a?!&&p=ab0565cb18412053JmltdHM9MTcxNzM3MjgwMCZpZ3VpZD0zMWU4OWM1Mi0xZDkwLTY5ODctMDIwMS04ZTZmMWNkMTY4ZDUmaW5zaWQ9NTE5NA&ptn=3&ver=2&hsh=3&fclid=31e89c52-1d90-6987-0201-8e6f1cd168d5&psq=instagram+conde+nast&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9jb25kZW5hc3Qv&ntb=1">Instagram</a></li>
+            </p>
+    </footer>
+</body>
+</html>

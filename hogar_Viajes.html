@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida Cotidiana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Color de fondo plateado */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff; /* Color de fondo del contenedor principal */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            position: relative;
+        }
+        .header {
+            position: relative;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 8px; /* Bordes redondeados */
+            overflow: hidden; /* Ocultar el desbordamiento */
+        }
+        .header img {
+            width: 100%;
+            display: block;
+            border-radius: 8px; /* Bordes redondeados */
+            position: relative;
+            z-index: 1;
+        }
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #fff; /* Color de texto blanco */
+            z-index: 2;
+        }
+        .header-overlay::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+            z-index: -1;
+        }
+        .header h1 {
+            margin-bottom: 10px;
+        }
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .main-content .item {
+            flex-basis: calc(50% - 10px);
+            margin-bottom: 20px;
+            background-color: #fff; /* Color de fondo del área de la imagen */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+        .main-content .item img {
+            max-width: 100%;
+            border-top-left-radius: 8px; /* Bordes redondeados */
+            border-top-right-radius: 8px; /* Bordes redondeados */
+        }
+        .item-info {
+            padding: 20px;
+        }
+        .blog-section {
+            margin-bottom: 20px;
+        }
+        .blog-section .post {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .blog-section .post:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        .blog-section .post img {
+            max-width: 100%;
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://concepto.de/wp-content/uploads/2020/11/estilo-de-vida-e1605825428573-800x400.jpg" alt="Imagen principal" style="width: 1200px; height: 570px;"/>
+            <div class="header-overlay">
+                <h1>Estilo de Vida</h1>
+                <p>Con 19 ediciones a sus espaldas, el Máster de Formación Permanente en Comunicación de Moda y Belleza UC3M-VOGUE,</br>
+                     se ha convertido en un referente para aquellos que quieren desarrollar su carrera en este sector.</br></br>
+
+                    Este Máster está dirigido a jóvenes licenciados y graduados interesados en la comunicación de moda y belleza y </br>
+                    personas que quieren desarrollar su carrera en el marketing, el sector del lujo y la publicidad. Los alumnos del </br>
+                    Máster podrán acceder a un conjunto de conocimientos que no están presentes en ninguna otra licenciatura o </br>
+                    grado actual, y también conocerán de primera mano las experiencias de los profesionales que lideran el desarrollo </br>
+                    del sector, tanto editorial como empresarial.
+                </p> </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="item">
+                <img src="https://static3.depositphotos.com/1000619/111/i/950/depositphotos_1111546-stock-photo-healthy-lifestyle-concept.jpg" alt="Imagen 1">
+                <div class="item-info">
+                    <h3>Cobertura de Celebridades</h3>
+                    <p>Esta sección ofrece noticias, entrevistas y reportajes exclusivos sobre las</br>
+                         últimas tendencias en la vida de las celebridades, incluyendo información </br>
+                         sobre películas, programas de televisión, música y eventos de la industria</br>
+                          del entretenimiento.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://fintelhub.com/wp-content/uploads/2021/08/lifestyle-entrepreneurship-el-emprendimiento-como-estilo-de-vida.jpeg" alt="Imagen 2" style="width: 700px; height: 350px;">
+                <div class="item-info">
+                    <h3>El Máster de Formación Permanente en Comunicación de Moda y Belleza UC3M-VOGUE (60 créditos) es una iniciativa pionera no sólo en España, sino en el ámbito internacional.</h3>
+                    <p>No existe ningún título oficial de postgrado que proporcione la formación</br>
+                         especializada necesaria, al nivel de exigencia que representa un Máster </br>
+                         impartido por una prestigiosa universidad, para aquellos que quieran </br>
+                         dedicarse a la comunicación en todas sus facetas dentro de la industria</br>
+                          de la moda y la belleza.
+                        </br></br>
+                        Representa además el ejemplo de la fructífera colaboración entre una empresa </br>
+                        privada y una universidad pública, unidas por la búsqueda de la excelencia.</br>
+                        </br>
+                        Además, las clases presenciales le dotan de un nivel experiencial insustituible.
+                        </br></br>
+                        El Máster ha sido un éxito, con casi 600 alumnos en dieciséis años, de los cuales</br>
+                         un porcentaje muy elevado de los alumnos que finalizan los estudios encuentran </br>
+                         trabajo en el sector de la moda y la belleza.
+                        </br></br>
+                        El 49% de los alumnos viene de Latinoamérica, Asia y el resto de Europa.
+                        </br></br>
+                        Este Máster está dirigido a recién graduados, interesados en la comunicación de </br>
+                        moda y belleza, el marketing, el sector de lujo, la publicidad… El Máster proporciona </br>
+                        una pionera e innovadora formación universitaria especializada para futuros</br>
+                         profesionales del sector.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="blog-section">
+            <div class="post">
+                <center><img src="https://sinergiasalud.org/wp-content/uploads/2021/04/lifestyle.jpg" alt="Imagen de entrada del blog 2" style="width: 900px; height: 600px;" /></center>
+                <h2>Guía de Eventos y Festivales</h2>
+                <p>Aquí los lectores pueden encontrar información sobre eventos culturales, festivales de </br>
+                    cine, conciertos, exposiciones de arte y otros eventos relacionados con el entretenimiento </br>
+                    que se llevarán a cabo en diferentes ciudades del mundo.</p>
+            </div>
+            <div class="post">
+                <center><img src="https://neuronup.com/wp-content/uploads/2022/03/Meditacion.-Clave-para-una-buena-salud-mental.jpg" alt="Imagen de entrada del blog 2" style="width: 600px; height: 400px;" /></center>
+                <h2>Moda y Estilo en el Entretenimiento</h2>
+                <p>Esta sección se centra en el aspecto de las celebridades en eventos importantes, ofreciendo análisis</br>
+                     de sus atuendos, tendencias de moda y consejos de estilo inspirados en las estrellas del cine, </br>
+                     la música y la televisión.</p>
+            </div>
+            <div class="post">
+                <img src="https://www.kalanobleas.com/wp-content/uploads/2023/08/1vida-saluble.jpg" alt="Imagen de entrada del blog 5" style="width: 550px; height: 300px;"/>
+                <h2>Detrás de Cámaras</h2>
+                <p>Aquí los lectores pueden acceder a contenido exclusivo que ofrece una mirada detrás de cámaras de</br>
+                     la producción de películas, programas de televisión y sesiones de fotos de revistas. Esto puede</br>
+                      incluir entrevistas con directores, actores y equipo técnico, así como imágenes y videos del </br>
+                      proceso creativo.</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>

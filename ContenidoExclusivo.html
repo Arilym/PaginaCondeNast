@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Usuarios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #000000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .header img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .blog {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .entry {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .read-more {
+            background-color: #000000;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .extra-content {
+            margin-top: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Contenido Exclusivo</h1>
+        <img src="https://i.pinimg.com/originals/d1/5c/de/d15cdee9e339dbb0fcb5f83a938e1717.gif" alt="Imagen de Cabecera">
+    </div>
+    <center><h1>¡Bienvenido/a a Conde Nast!</h1>
+    <h3>Estás a punto de desbloquear un acceso exclusivo a cinco secciones distintas, cada </br>
+     una ofreciendo contenido cuidadosamente seleccionado de nuestras prestigiosas revistas</h3></center>
+
+     
+    <div class="blog">
+        <div class="entry">
+            <center> <img src="https://i.pinimg.com/564x/25/22/73/2522734862f94444765bb049d6731262.jpg" alt="Imagen de Entrada"></center>
+            <h2>Vogue VIP</h2>
+            <p>Sumérgete en el mundo de la moda con acceso exclusivo a artículos detrás de escena, entrevistas con diseñadores icónicos y reportajes de moda de las pasarelas más importantes del mundo.</p>
+            <button class="read-more">Leer más</button>
+            <div class="extra-content hidden">
+                <p>Más contenido de la entrada 1...</p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <center><img src="https://i.pinimg.com/736x/0b/66/3c/0b663c3589477587579c2d625128002e.jpg" alt="Imagen de Entrada"></center>
+            <h2>Traveler's Corner</h2>
+            <p>Explora destinos de ensueño y descubre experiencias únicas en viajes a través de contenido exclusivo de Conde Nast Traveler. Desde recomendaciones de hoteles boutique hasta guías de viaje personalizadas, prepárate para vivir aventuras inolvidables.</p>
+            <button class="read-more">Leer más</button>
+            <div class="extra-content hidden">
+                <p>Más contenido de la entrada 2...</p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <center><img src="https://i.pinimg.com/564x/df/3b/01/df3b012d21e7b901933f0d9a9d6b4784.jpg" alt="Imagen de Entrada"></center>
+            <h2>Culture Beat</h2>
+            <p>Sumérgete en el mundo del arte, la música, el cine y la literatura con acceso exclusivo a entrevistas con artistas destacados, reseñas de películas premiadas y recomendaciones de libros de los críticos más influyentes.</p>
+            <button class="read-more">Leer más</button>
+            <div class="extra-content hidden">
+                <p>Más contenido de la entrada 2...</p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <center> <img src="https://i.pinimg.com/564x/51/55/30/51553028e68a4a5af945c3876d032eb2.jpg" alt="Imagen de Entrada"></center>
+            <h2>Lifestyle Insider</h2>
+            <p>Descubre los secretos para una vida elegante y sofisticada con contenido exclusivo de nuestras revistas de estilo de vida. Desde consejos de decoración del hogar hasta recetas gourmet de chefs famosos, aquí encontrarás todo lo que necesitas para vivir con estilo.</p>
+            <button class="read-more">Leer más</button>
+            <div class="extra-content hidden">
+                <p>Más contenido de la entrada 2...</p>
+            </div>
+        </div>
+
+        <div class="entry">
+           <center> <img src="https://i.pinimg.com/564x/73/40/f1/7340f1fd1856954136f0f32d4bb098a8.jpg" alt="Imagen de Entrada"></center>
+            <h2>Gourmet Gazette</h2>
+            <p>Deléitate con el mundo de la gastronomía y los vinos con acceso exclusivo a reseñas de restaurantes de clase mundial, recetas de chefs reconocidos y consejos de maridaje de vinos de expertos sommeliers.</p>
+            <div class="extra-content hidden">
+                <p>Más contenido de la entrada 2...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const readMoreButtons = document.querySelectorAll('.read-more');
+
+            readMoreButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const extraContent = this.nextElementSibling;
+                    extraContent.classList.toggle('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

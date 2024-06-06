@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: black; /* Fondo negro */
+            color: white; /* Texto blanco */
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-image: url('https://townsquare.media/site/838/files/2019/01/condenast.jpg?w=980&q=75'); /* URL de tu imagen de cabecera */
+            background-size: cover;
+            background-position: center;
+            height: 200px; /* Altura de la cabecera */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        h1 {
+            font-size: 48px; /* Tamaño de título más grande */
+            position: relative;
+            z-index: 1;
+        }
+        .carousel-container {
+            width: 100%;
+            overflow: hidden;
+            margin: auto;
+            padding: 20px 0;
+            position: relative;
+        }
+        .carousel {
+            display: flex;
+            position: relative;
+            animation: scroll 20s linear infinite;
+        }
+        .carousel img {
+            width: 300px; /* Tamaño de las imágenes ajustado */
+            height: auto;
+            margin: 0 2px;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        .carousel img:hover {
+            transform: scale(1.3); /* Cambio de tamaño al hacer hover */
+        }
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        .carousel:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1></h1>
+    </div>
+    <h1>MARCAS</h1>
+    <div class="carousel-container">
+        <div class="carousel" id="carousel">
+            <img src="https://i.pinimg.com/564x/c2/42/65/c24265d5438f365e059f65e686fa34eb.jpg" alt="Marca 1" data-link="pagina1.html">
+            <img src="https://th.bing.com/th/id/OIP.EdUf3m5iTLmB20o1dsbYHwHaHa?rs=1&pid=ImgDetMain" alt="Marca 2" data-link="pagina2.html">
+            <img src="https://th.bing.com/th/id/R.0c7f142d3bf03c0a1f7c33cc7bd20d35?rik=4n36bOYMF2a3OQ&pid=ImgRaw&r=0" alt="Marca 3" data-link="pagina3.html">
+            <img src="https://www.magforest.com/wp-content/uploads/2023/01/Vanity-Fair-Magazine-The-27th-Annual-Hollywood-Issue-2021Zendaya-Charlize.jpg" alt="Marca 4" data-link="pagina4.html">
+            <img src="https://i.pinimg.com/564x/f8/8c/33/f88c330f0f13e505736bb744d1befc11.jpg" alt="Marca 5" data-link="pagina5.html">
+            <img src="https://th.bing.com/th/id/OIP.mQJMeb97jg8m-Wz4BRD4vAHaJu?rs=1&pid=ImgDetMain" alt="Marca 6" data-link="pagina6.html">
+            <img src="https://th.bing.com/th/id/OIP.gchOYbchZW_u_Kp5tdaCagHaJ4?rs=1&pid=ImgDetMain" alt="Marca 7" data-link="pagina7.html">
+            <img src="https://th.bing.com/th/id/OIP.oxGVRWbum-i4V5Q87Olm0QHaKE?rs=1&pid=ImgDetMain" alt="Marca 8" data-link="pagina8.html">
+            <img src="https://static01.nyt.com/images/2019/12/05/fashion/04WORLDOFINTERIORS-6/04WORLDOFINTERIORS-6-mobileMasterAt3x-v3.jpg" alt="Marca 9" data-link="pagina9.html">
+            <img src="https://th.bing.com/th/id/OIP.0zumciPktXzgC7JAH9DTSwHaHP?rs=1&pid=ImgDetMain" alt="Marca 10" data-link="pagina10.html">
+            <!-- Duplicates for continuous effect -->
+            <img src="https://i.pinimg.com/564x/c2/42/65/c24265d5438f365e059f65e686fa34eb.jpg" alt="Marca 1" data-link="pagina1.html">
+            <img src="https://th.bing.com/th/id/OIP.EdUf3m5iTLmB20o1dsbYHwHaHa?rs=1&pid=ImgDetMain" alt="Marca 2" data-link="pagina2.html">
+            <img src="https://th.bing.com/th/id/R.0c7f142d3bf03c0a1f7c33cc7bd20d35?rik=4n36bOYMF2a3OQ&pid=ImgRaw&r=0" alt="Marca 3" data-link="pagina3.html">
+            <img src="https://www.magforest.com/wp-content/uploads/2023/01/Vanity-Fair-Magazine-The-27th-Annual-Hollywood-Issue-2021Zendaya-Charlize.jpg" alt="Marca 4" data-link="pagina4.html">
+            <img src="https://i.pinimg.com/564x/f8/8c/33/f88c330f0f13e505736bb744d1befc11.jpg" alt="Marca 5" data-link="pagina5.html">
+            <img src="https://th.bing.com/th/id/OIP.mQJMeb97jg8m-Wz4BRD4vAHaJu?rs=1&pid=ImgDetMain" alt="Marca 6" data-link="pagina6.html">
+            <img src="https://th.bing.com/th/id/OIP.gchOYbchZW_u_Kp5tdaCagHaJ4?rs=1&pid=ImgDetMain" alt="Marca 7" data-link="pagina7.html">
+            <img src="https://th.bing.com/th/id/OIP.oxGVRWbum-i4V5Q87Olm0QHaKE?rs=1&pid=ImgDetMain" alt="Marca 8" data-link="pagina8.html">
+            <img src="https://static01.nyt.com/images/2019/12/05/fashion/04WORLDOFINTERIORS-6/04WORLDOFINTERIORS-6-mobileMasterAt3x-v3.jpg" alt="Marca 9" data-link="pagina9.html">
+            <img src="https://th.bing.com/th/id/OIP.0zumciPktXzgC7JAH9DTSwHaHP?rs=1&pid=ImgDetMain" alt="Marca 10" data-link="pagina10.html">
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.carousel img').forEach(img => {
+            img.addEventListener('click', event => {
+                const link = event.target.getAttribute('data-link');
+                if (link) {
+                    window.location.href = link;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

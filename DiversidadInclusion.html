@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diversidad e Inclusion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #000;
+            color: #fff;
+        }
+        .slider {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 20px;
+            justify-content: center;
+            background-color: #f4f4f4;
+        }
+        .slider img {
+            height: 300px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .slider img.selected {
+            height: 500px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            justify-content: center;
+        }
+        .box {
+            width: 400px;
+            margin: 20px;
+            overflow: hidden;
+            border: 2px solid #333;
+            transition: transform 0.3s;
+        }
+        .box img {
+            width: 100%;
+            transition: transform 0.3s;
+        }
+        .box:hover {
+            transform: scale(1.05);
+        }
+        .box:hover img {
+            transform: scale(1.2);
+        }
+        .info {
+            flex-basis: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 2px solid #333;
+            margin: 10px 0;
+            transition: background-color 0.3s;
+        }
+        .info img {
+            width: 400px;
+            height: 400px;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+        .info:hover img {
+            transform: scale(1.1);
+        }
+        .info:hover {
+            background-color: #eaeaea;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Diversidad e Inclusion</h1>
+    </div>
+    <div class="slider" id="slider">
+        <img src="https://i.pinimg.com/564x/18/34/69/183469bcfde13c6151dbbfbdadc2380f.jpg" alt="Slider 1" onclick="selectImage(this)">
+        <img src="https://i.pinimg.com/564x/c7/3c/12/c73c12bc13e505dc407dc9df62e57dcc.jpg" alt="Slider 2" onclick="selectImage(this)">
+        <img src="https://i.pinimg.com/564x/6b/dc/c9/6bdcc927452b231e585745112776c4d8.jpg" alt="Slider 3" onclick="selectImage(this)">
+        <img src="https://i.pinimg.com/564x/b1/44/e5/b144e5eb3cd9a759cf71672e3e3b847e.jpg" alt="Slider 4" onclick="selectImage(this)">
+    </div>
+    <div class="container">
+        <div class="box">
+            <img src="https://strapi-bus-eng-prod.s3.us-east-1.amazonaws.com/Tatler_082023_5f2f5db3b4_e0961d6390.jpg" alt="Imagen 1">
+        </div>
+        <div class="box">
+            <img src="https://strapi-bus-eng-prod.s3.amazonaws.com/0417_GL_WELL_38_01_0ee7b81619.jpg" alt="Imagen 2">
+        </div>
+        <div class="box">
+            <img src="https://strapi-bus-eng-prod.s3.amazonaws.com/CROP_YENDRY_007_151b6022ba.jpg" alt="Imagen 3">
+        </div>
+        <div class="info">
+            <h2>Coalición de Campeones del Cambio</h2>
+            <p>Condé Nast es defensora de la Coalición Campeones del Cambio, una organización global sin fines de lucro </br>
+                que trabaja con líderes influyentes para redefinir el papel de los hombres en la adopción de medidas contra </br>
+                la desigualdad de género y el empoderamiento de las mujeres. desde 2018. El Director Ejecutivo de Condé Nast,</br>
+                 Roger Lynch, es un orgulloso miembro del Grupo de Tecnología Global de la Coalición Campeones del Cambio.</br>
+                  Para impulsar acciones importantes, nos comprometemos a asumir la responsabilidad de acelerar el cambio en</br>
+                   nuestra organización y a abogar públicamente por el aumento de la representación de las mujeres en roles de</br>
+                    liderazgo.</p>
+            <img src="https://i.pinimg.com/564x/ca/57/7c/ca577c4dbd28ca820e71cd68ac223c55.jpg" alt="Info Imagen 1">
+            <img src="https://i.pinimg.com/564x/f5/51/d8/f551d86a08bbeec9ce862d83614522b5.jpg" alt="Info Imagen 2">
+        </div>
+        <div class="info">
+            <h2>Reporte de Diversidad e Inclusión</h2>
+            <p>Condé Nast tiene una única posición como portafolio global de marcas de renombre con algunos de los periodistas </br>
+                más influyentes y creadores culturales más talentosos del planeta. Nuestro cuarto Informe anual de Diversidad</br>
+                 e Inclusión, "Empoderar cada historia", refleja la poderosa voz que tenemos en el mundo y la forma en que todos </br>
+                 desempeñamos nuestro papel para influir en la cultura e impulsar el cambio a través de nuestro trabajo.</p>
+            <img src="https://i.pinimg.com/736x/d1/7a/5f/d17a5fa45960d2c3bb0ecf7ddb1e52bb.jpg" alt="Info Imagen 3">
+            <img src="https://i.pinimg.com/564x/65/7f/ed/657fed9462b1d207384c5552399a773c.jpg" alt="Info Imagen 4">
+        </div>
+        <div class="info">
+            <h2>Grupos de recursos para empleados</h2>
+            <p>En 2021, nuestros grupos de recursos para empleados (ERG) se expandieron a nivel mundial. Los ERG son redes de</br>
+                 voluntarios dirigidas por empleados que comparten culturas, identidades e intereses comunes que representan</br>
+                  las voces y perspectivas ricas y diversas de Condé Nast. Están diseñados para construir una comunidad, contribuir </br>
+                  al crecimiento profesional y fomentar una cultura diversa e inclusiva donde todos se sientan bienvenidos y </br>
+                  celebrados.</br></br>
+                Los ERG son redes de voluntarios dirigidas por empleados que comparten culturas, identidades e intereses comunes </br>
+                que representan las voces y perspectivas ricas y diversas de Condé Nast. Están diseñados para construir una comunidad,</br>
+                 contribuir al crecimiento profesional y fomentar una cultura diversa e inclusiva donde todos se sientan bienvenidos </br>
+                 y celebrados. 
+                </p>
+            <img src="https://i.pinimg.com/564x/dc/b4/b4/dcb4b48c3d3d90a6b77882dc53023693.jpg" alt="Info Imagen 5">
+            <img src="https://i.pinimg.com/564x/79/7a/58/797a58d700b77f54b2f9273559c22506.jpg" alt="Info Imagen 6">
+        </div>
+    </div>
+    <script>
+        function selectImage(selectedImg) {
+            const images = document.querySelectorAll('.slider img');
+            images.forEach(img => img.classList.remove('selected'));
+            selectedImg.classList.add('selected');
+        }
+    </script>
+</body>
+</html>

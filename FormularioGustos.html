@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Intereses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            color: #000;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        p {
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        label {
+            margin-bottom: 10px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            align-self: center;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+    <script>
+        function evaluarRespuestas() {
+            const respuestas = document.querySelectorAll('input[type="radio"]:checked');
+            const conteo = { A: 0, B: 0, C: 0, D: 0, E: 0 };
+
+            respuestas.forEach(respuesta => {
+                conteo[respuesta.value]++;
+            });
+
+            let mayor = 'A';
+            for (let letra in conteo) {
+                if (conteo[letra] > conteo[mayor]) {
+                    mayor = letra;
+                }
+            }
+
+            const paginas = {
+                'A': 'moda.html',
+                'B': 'belleza.html',
+                'C': 'hogar_viajes.html',
+                'D': 'entretenimientos.html',
+                'E': 'cultura.html'
+            };
+
+            window.location.href = paginas[mayor];
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Encuesta de Intereses</h1>
+        <form onsubmit="event.preventDefault(); evaluarRespuestas();">
+            <p>1. ¿Cuál de las siguientes actividades disfrutas más en tu tiempo libre?</p>
+            <label><input type="radio" name="pregunta1" value="A" required> A) Explorar nuevas tendencias de moda.</label>
+            <label><input type="radio" name="pregunta1" value="B"> B) Probar productos de belleza y maquillaje.</label>
+            <label><input type="radio" name="pregunta1" value="C"> C) Redecorar tu hogar o planear un viaje.</label>
+            <label><input type="radio" name="pregunta1" value="D"> D) Ver películas, series o leer libros.</label>
+            <label><input type="radio" name="pregunta1" value="E"> E) Visitar museos o aprender sobre diferentes culturas.</label>
+
+            <p>2. ¿Qué tipo de contenido te atrae más en redes sociales?</p>
+            <label><input type="radio" name="pregunta2" value="A" required> A) Fotos de pasarelas y looks de moda.</label>
+            <label><input type="radio" name="pregunta2" value="B"> B) Tutoriales de maquillaje y reseñas de productos.</label>
+            <label><input type="radio" name="pregunta2" value="C"> C) Imágenes de destinos turísticos y recetas de cocina.</label>
+            <label><input type="radio" name="pregunta2" value="D"> D) Tráilers de películas, críticas y entrevistas con artistas.</label>
+            <label><input type="radio" name="pregunta2" value="E"> E) Arte, exposiciones y temas de inclusión social.</label>
+
+            <p>3. ¿Qué revista te gustaría leer en un día relajado?</p>
+            <label><input type="radio" name="pregunta3" value="A" required> A) Vogue o GQ.</label>
+            <label><input type="radio" name="pregunta3" value="B"> B) Allure o Glamour.</label>
+            <label><input type="radio" name="pregunta3" value="C"> C) Architectural Digest o Condé Nast Traveler.</label>
+            <label><input type="radio" name="pregunta3" value="D"> D) Vanity Fair o Wired.</label>
+            <label><input type="radio" name="pregunta3" value="E"> E) The New Yorker o Bon Appétit.</label>
+
+            <p>4. Si pudieras asistir a cualquier evento, ¿cuál elegirías?</p>
+            <label><input type="radio" name="pregunta4" value="A" required> A) Semana de la moda en París o Nueva York.</label>
+            <label><input type="radio" name="pregunta4" value="B"> B) Un taller de belleza con un famoso maquillador.</label>
+            <label><input type="radio" name="pregunta4" value="C"> C) Una feria de diseño de interiores o un festival gastronómico.</label>
+            <label><input type="radio" name="pregunta4" value="D"> D) El estreno de una película o un concierto.</label>
+            <label><input type="radio" name="pregunta4" value="E"> E) Una exposición de arte o un seminario cultural.</label>
+
+            <p>5. ¿Cuál de estas actividades disfrutas más durante el fin de semana?</p>
+            <label><input type="radio" name="pregunta5" value="A" required> A) Ir de compras y armar nuevos outfits.</label>
+            <label><input type="radio" name="pregunta5" value="B"> B) Experimentar con nuevos productos de belleza.</label>
+            <label><input type="radio" name="pregunta5" value="C"> C) Cocinar una nueva receta o planear una escapada.</label>
+            <label><input type="radio" name="pregunta5" value="D"> D) Maratonear series o leer un buen libro.</label>
+            <label><input type="radio" name="pregunta5" value="E"> E) Visitar una galería de arte o asistir a un evento cultural.</label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
+

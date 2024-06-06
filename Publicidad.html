@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicidad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Color de fondo plateado */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff; /* Color de fondo del contenedor principal */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            position: relative;
+        }
+        .header {
+            position: relative;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 8px; /* Bordes redondeados */
+            overflow: hidden; /* Ocultar el desbordamiento */
+        }
+        .header img {
+            width: 100%;
+            display: block;
+            border-radius: 8px; /* Bordes redondeados */
+            position: relative;
+            z-index: 1;
+        }
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #fff; /* Color de texto blanco */
+            z-index: 2;
+        }
+        .header-overlay::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+            z-index: -1;
+        }
+        .header h1 {
+            margin-bottom: 10px;
+        }
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .main-content .item {
+            flex-basis: calc(50% - 10px);
+            margin-bottom: 20px;
+            background-color: #fff; /* Color de fondo del área de la imagen */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+        .main-content .item img {
+            max-width: 100%;
+            border-top-left-radius: 8px; /* Bordes redondeados */
+            border-top-right-radius: 8px; /* Bordes redondeados */
+        }
+        .item-info {
+            padding: 20px;
+        }
+        .blog-section {
+            margin-bottom: 20px;
+        }
+        .blog-section .post {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .blog-section .post:last-child {
+            border-bottom: none;/* No mover aqui */
+            margin-bottom: 0;
+        }
+        .blog-section .post img {
+            max-width: 100%;
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://i.pinimg.com/564x/04/34/68/043468dd6581a0c430b281c808269567.jpg" alt="Imagen principal" style="width: 1200px; height: 570px;"/>
+            <div class="header-overlay">
+                <h1>Publicidad Condé Nast</h1>
+                <p>Las marcas de Condé Nast tienen una influencia extraordinaria, con el poder de mover </br>
+                    y alterar la cultura de maneras fundamentales e importantes. Para aprovechar esa influencia, </br>
+                    Condé Nast ha desarrollado un conjunto innovador de productos que permite a los socios </br>
+                    aprovechar su rico contenido y su codiciada audiencia para impulsar los resultados </br>
+                    comerciales.
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="item">
+                <img src="https://strapi-bus-eng-prod.s3.amazonaws.com/VF_1321_Cover_Portfolio_4_2_064a8047e1.jpg" alt="Imagen 1">
+                <div class="item-info">
+                    <h3>Nuestras marcas</h3>
+                    <p>A través de nuestras marcas de clase mundial </br>
+                        y un conjunto innovador de productos en todas </br>
+                        las plataformas, maximizamos los resultados </br>
+                        para nuestros socios a través de una </br>
+                        orientación incomparable, relaciones profundas </br>
+                        y un conocimiento de la audiencia incomparable.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://th.bing.com/th/id/R.dff86a882b0a1c5b16a5bd521046a738?rik=KFFiV%2bGEOMrQ6g&pid=ImgRaw&r=0" alt="Imagen 2">
+                <div class="item-info">
+                    <h3>Eventos de Condé Nast</h3>
+                    <p>Condé Nast acerca a sus audiencias a su espíritu </br>
+                        editorial a través de experiencias dinámicas que</br>
+                         ponen a nuestros editores, reporteros y a los </br>
+                         líderes y los temas, que cubren en la vanguardia</br>
+                          de la cultura. Iniciamos y damos forma a la </br>
+                          conversación, y lo hacemos en tiempo real.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="blog-section">
+            <div class="post">
+                <img src="https://strapi-bus-eng-prod.s3.amazonaws.com/septembertop_24_9592f7538b.jpg" alt="Imagen de entrada del blog 1">
+                <h2>Propiedad de marca</h2>
+                <p>Condé Nast amplía la experiencia del cliente con una cartera de 
+                    propiedades de marca, que incluyen tiendas minoristas, </br>
+                    restaurantes y bares, con la visión de abrir residencias y hoteles
+                     de marca.</p>
+            </div>
+            <div class="post">
+                <img src="https://strapi-bus-eng-prod.s3.amazonaws.com/septembertop_23_8a33937a98.jpg" alt="Imagen de entrada del blog 2">
+                <h2>Licencia de producto</h2>
+                <p>Los productos de marca brindan a los consumidores nuevas formas de interactuar 
+                    con las marcas que aman. Junto con socios expertos en la categoría,</br>
+                     creamos productos de estilo de vida innovadores que van desde ropa 
+                     hasta artículos de aseo personal, artículos para el hogar y más.</p>
+            </div>
+            <!--Agregar aqui mas contenido despues-->
+        </div>
+    </div>
+</body>
+</html>

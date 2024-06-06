@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entretenimiento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Color de fondo plateado */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff; /* Color de fondo del contenedor principal */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            position: relative;
+        }
+        .header {
+            position: relative;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 8px; /* Bordes redondeados */
+            overflow: hidden; /* Ocultar el desbordamiento */
+        }
+        .header img {
+            width: 100%;
+            display: block;
+            border-radius: 8px; /* Bordes redondeados */
+            position: relative;
+            z-index: 1;
+        }
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #fff; /* Color de texto blanco */
+            z-index: 2;
+        }
+        .header-overlay::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+            z-index: -1;
+        }
+        .header h1 {
+            margin-bottom: 10px;
+        }
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .main-content .item {
+            flex-basis: calc(50% - 10px);
+            margin-bottom: 20px;
+            background-color: #fff; /* Color de fondo del área de la imagen */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+        .main-content .item img {
+            max-width: 100%;
+            border-top-left-radius: 8px; /* Bordes redondeados */
+            border-top-right-radius: 8px; /* Bordes redondeados */
+        }
+        .item-info {
+            padding: 20px;
+        }
+        .blog-section {
+            margin-bottom: 20px;
+        }
+        .blog-section .post {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .blog-section .post:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        .blog-section .post img {
+            max-width: 100%;
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://i2.cdn.turner.com/cnn/dam/assets/130423173455-conde-nast-traveler-best-new-hotels-2013---11-horizontal-gallery.jpg" alt="Imagen principal" style="width: 1200px; height: 570px;"/>
+            <div class="header-overlay">
+                <h1>Entretenimiento</h1>
+                <p>Condé Nast Entertainment (CNE) es la galardonada división de producción de</br>
+                películas y televisión de la compañía, con una red digital y estudio, que</br>
+                 crea y distribuye entretenimiento en todos los formatos de imagen, sonido y</br>
+                  movimiento a través de todas las plataformas para las marcas más definitorias </br>
+                  de la cultura mundial, incluyendo The New Yorker, Vanity Fair, WIRED, Vogue, </br>
+                  GQ, Architectural Digest y más.
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="item">
+                <img src="https://files.merca20.com/uploads/2022/03/Conde-Nast-Rusia-Vogue-GQ-Glamour.jpg" alt="Imagen 1">
+                <div class="item-info">
+                    <h3>Cobertura de Celebridades</h3>
+                    <p>Esta sección ofrece noticias, entrevistas y reportajes exclusivos sobre las</br>
+                         últimas tendencias en la vida de las celebridades, incluyendo información </br>
+                         sobre películas, programas de televisión, música y eventos de la industria</br>
+                          del entretenimiento.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://strapi-bus-eng-prod.s3.amazonaws.com/brands_CN_traveller_spain_large_compressed_1_c17bce8455.jpg" alt="Imagen 2">
+                <div class="item-info">
+                    <h3>Críticas de Cine y Televisión</h3>
+                    <p>En esta sección, los críticos expertos ofrecen reseñas detalladas y análisis</br>
+                         de las últimas películas de cine y series de televisión. También pueden incluir</br>
+                          entrevistas con directores, actores y otros profesionales de la industria del</br>
+                           entretenimiento.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="blog-section">
+            <div class="post">
+                <center><img src="https://m.wsj.net/video/20131024/102413opinioninternships/102413opinioninternships_1280x720.jpg" alt="Imagen de entrada del blog 2" style="width: 800px; height: 400px;" /></center>
+                <h2>Guía de Eventos y Festivales</h2>
+                <p>Aquí los lectores pueden encontrar información sobre eventos culturales, festivales de </br>
+                    cine, conciertos, exposiciones de arte y otros eventos relacionados con el entretenimiento </br>
+                    que se llevarán a cabo en diferentes ciudades del mundo.</p>
+            </div>
+            <div class="post">
+                <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCTBHdwCyhQHi22KiJYJ7Zo7isgtiuu5c6Q_B-_itWNLu_nrJvwFQrYMkSKFaQu3rwY7E&usqp=CAU" alt="Imagen de entrada del blog 2" style="width: 500px; height: 250px;" /></center>
+                <h2>Moda y Estilo en el Entretenimiento</h2>
+                <p>Esta sección se centra en el aspecto de las celebridades en eventos importantes, ofreciendo análisis</br>
+                     de sus atuendos, tendencias de moda y consejos de estilo inspirados en las estrellas del cine, </br>
+                     la música y la televisión.</p>
+            </div>
+            <div class="post">
+                <img src="https://vidanta.com/documents/20142/210892/rm-conde-nast-gd.jpg/28d6170d-3ae6-7d44-6f2c-76540c826e79?t=1570477572528" alt="Imagen de entrada del blog 1" style="width: 550px; height: 250px;"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZZR3POTn1zuUP_VvFUvVMhCeEAhD5Y8185mZe2uVuxAYbDmNY2_5JDSvcUTootV5q_kI&usqp=CAU" alt="Imagen de entrada del blog 5" style="width: 550px; height: 250px;"/>
+                <h2>Detrás de Cámaras</h2>
+                <p>Aquí los lectores pueden acceder a contenido exclusivo que ofrece una mirada detrás de cámaras de</br>
+                     la producción de películas, programas de televisión y sesiones de fotos de revistas. Esto puede</br>
+                      incluir entrevistas con directores, actores y equipo técnico, así como imágenes y videos del </br>
+                      proceso creativo.</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
